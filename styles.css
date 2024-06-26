@@ -1,0 +1,237 @@
+html{
+  background-color: rgb(40, 34, 34);
+  padding: 40px;
+}
+.main-container{
+  display: flex;
+  flex-direction: column;
+}
+.intro-section{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  width: 100%;
+  height: 100%;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+.socials-link{
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+  /*margin-left: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;*/
+  margin: 20px auto;
+  height: fit-content;
+  bottom: 0px;
+}
+.bio{
+  /*background-color: antiquewhite;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 2px;*/
+  position: relative;
+  align-items: center;
+}
+.bio p{
+  text-align: center;
+  justify-content: end;
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+}
+.name p{
+  font-size: 50px;
+  /*background-color: oldlace;*/
+  margin: 0;
+  color: white;
+}
+.greeting{
+  margin-top: 100px;
+  margin-left: 150px;
+  /*background-color: beige;*/
+}
+.greeting p{
+  font-size: larger;
+  text-align: left;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.logo{
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
+  border-style: none;
+  border-radius: 20px;
+}
+.link{
+  border-radius: 2px;
+  border-style: none;
+  margin-bottom: 0px;
+  display: flex;
+  bottom: 10px;
+  right: 10px;
+  margin: 0px 30px;
+  cursor: pointer;
+  justify-content: center;
+}
+.photo-section{
+  /*background-color: aliceblue;*/
+  width: auto;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  height: fit-content;
+}
+.own-photo{
+  object-fit: fill;
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  left: 25%;
+  top: 25%;
+  bottom: 25%;
+  right: 25%;
+}
+.about-section{
+  background-color: blueviolet;
+  border-style: solid;
+  border-width: 2px;
+  color: white;
+  border-color: black;
+  border-radius: 20px;
+  margin: 8px 20px;
+  padding: 8px;
+  padding-bottom: 15px;
+}
+.about-section h2{
+  text-align: center;
+}
+.resume-button{
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 120px;
+  background-color: darkcyan;
+  border-radius: 20px;
+  color: antiquewhite;
+  font-size: 15px;
+  padding: 4px 8px;
+  font-family: cursive;
+  cursor: pointer;
+  border-style: none;
+  text-align: center;
+  line-height: 30px;
+}
+.resume-button:hover{
+  opacity: 0.7;
+}
+.resume-button:active{
+  opacity: 0.4;
+}
+.project-section, .experience-section{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  border-color: black;
+  height: 100%;
+  margin: 8px auto;
+  text-align: center;
+  color: white;
+  background-color: blueviolet;
+  padding: 8px;
+  padding-bottom: 15px;
+}
+.projects, .experiences{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project-details, .experience-details{
+  width: 30%;
+  flex-basis: 30%;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  margin: 8px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.427);
+  color: white;
+  height: 100%;
+  border-color: black;
+  padding: 8px;
+}
+.tech-stack-details{
+  margin: auto;
+}
+.tech-stack-details img{
+  width: 20px;
+  margin: 8px;
+  border-radius: 2px;
+}
+.code-link, .live-link{
+  border-style: none;
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 5px;
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+  line-height: 10px;
+  margin: 8px auto;
+  border-radius: 8px;
+}
+.live-link{
+  background-color: gray;
+  color: white;
+}
+/*.experience-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}*/
+.contact-section{
+  color: white;
+  text-align: center;
+}
+.contact-image{
+  width: 20px;
+  margin: 8px;
+  border-radius: 2px; 
+}
+.contact-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  background-color: black;
+  margin: auto;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+.img-text-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1400px){
+  .main-container .intro-section{
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+@media (max-width: 1200px){
+  .main-container .intro-section{
+    grid-template-columns: 1fr;
+  }
+}
